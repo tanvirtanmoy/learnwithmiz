@@ -1,0 +1,137 @@
+'use client';
+
+import { useState } from 'react';
+import { useLanguage } from '@/i18n';
+import Button from './Button';
+import Card from './Card';
+
+export default function ContactForm() {
+  const { dictionary: d } = useLanguage();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    interest: '',
+    message: '',
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    // Simulate form submission
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    
+    setIsSubmitting(false);
+    setIsSuccess(true);
+  };
+
+  if (isSuccess) {
+    return (
+      <Card className="max-w-xl mx-auto text-center py-12">
+        <div className="w-16 h-16 mx-auto mb-6 bg-cafe-100 rounded-full flex items-center justify-center">
+          <svg className="w-8 h-8 text-cafe-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 className="text-2xl font-bold text-warmGray-800 mb-3">{d.contact.success.title}</h3>
+        <p className="text-warmGray-600 mb-4">{d.contact.success.description}</p>
+        <p className="text-sm text-warmGray-500 mb-8">{d.contact.success.note}</p>
+        <Button href="/" variant="primary">
+          {d.contact.success.back}
+        </Button>
+      </Card>
+    );
+  }
+
+  return (
+    <Card className="max-w-xl mx-auto">
+      <form onSubmit={handleSubmit} className="space-y-6">
+        {/* Name */}
+        <div>
+          <label htmlFor="name" className="block text-sm font-medium text-warmGray-700 mb-2">
+            {d.contact.form.name} <span className="text-cafe-600">*</span>
+          </label>
+          <input
+            type="text"
+            id="name"
+            required
+            value={formData.name}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            placeholder={d.contact.form.namePlaceholder}
+            className="w-full px-4 py-3 rounded-lg border border-cafe-200 focus:border-cafe-500 focus:ring-2 focus:ring-cafe-100 transition-colors outline-none text-warmGray-800 placeholder-warmGray-400"
+          />
+        </div>
+
+        {/* Email */}
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium text-warmGray-700 mb-2">
+            {d.contact.form.email} <span className="text-cafe-600">*</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            required
+            value={formData.email}
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+            placeholder={d.contact.form.emailPlaceholder}
+            className="w-full px-4 py-3 rounded-lg border border-cafe-200 focus:border-cafe-500 focus:ring-2 focus:ring-cafe-100 transition-colors outline-none text-warmGray-800 placeholder-warmGray-400"
+          />
+        </div>
+
+        {/* Interest */}
+        <div>
+          <label htmlFor="interest" className="block text-sm font-medium text-warmGray-700 mb-2">
+            {d.contact.form.interest}
+          </label>
+          <select
+            id="interest"
+            value={formData.interest}
+            onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
+            className="w-full px-4 py-3 rounded-lg border border-cafe-200 focus:border-cafe-500 focus:ring-2 focus:ring-cafe-100 transition-colors outline-none text-warmGray-800 bg-white appearance-none cursor-pointer"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%238b7355'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'right 1rem center',
+              backgroundSize: '1.25rem',
+            }}
+          >
+            <option value="">{d.contact.form.interestPlaceholder}</option>
+            {d.contact.form.interestOptions.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Message */}
+        <div>
+          <label htmlFor="message" className="block text-sm font-medium text-warmGray-700 mb-2">
+            {d.contact.form.message}
+          </label>
+          <textarea
+            id="message"
+            rows={4}
+            value={formData.message}
+            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+            placeholder={d.contact.form.messagePlaceholder}
+            className="w-full px-4 py-3 rounded-lg border border-cafe-200 focus:border-cafe-500 focus:ring-2 focus:ring-cafe-100 transition-colors outline-none text-warmGray-800 placeholder-warmGray-400 resize-none"
+          />
+        </div>
+
+        {/* Submit */}
+        <Button
+          type="submit"
+          variant="primary"
+          size="large"
+          className="w-full"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? d.contact.form.submitting : d.contact.form.submit}
+        </Button>
+      </form>
+    </Card>
+  );
+}

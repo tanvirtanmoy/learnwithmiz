@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  /* Café Color Palette */
+  
+  /* Warm Brown - Primary accent */
+  --color-cafe-50: #faf8f6;
+  --color-cafe-100: #f3efe9;
+  --color-cafe-200: #e8dfd3;
+  --color-cafe-300: #d4c4ae;
+  --color-cafe-400: #bda686;
+  --color-cafe-500: #a68b68;
+  --color-cafe-600: #8b7355;
+  --color-cafe-700: #735e47;
+  --color-cafe-800: #5f4d3b;
+  --color-cafe-900: #4a3d30;
+
+  /* Muted Sage/Olive - Secondary accent */
+  --color-sage-50: #f6f7f4;
+  --color-sage-100: #e9ebe4;
+  --color-sage-200: #d5d9cb;
+  --color-sage-300: #b8bfa8;
+  --color-sage-400: #9aa285;
+  --color-sage-500: #7d866a;
+  --color-sage-600: #656d55;
+  --color-sage-700: #515745;
+  --color-sage-800: #43473a;
+  --color-sage-900: #383b31;
+
+  /* Warm Beige Background */
+  --color-warmWhite: #faf8f5;
+  --color-cream: #f5f2ed;
+  --color-latte: #ebe6de;
+  
+  /* Warm Grays */
+  --color-warmGray-50: #fafaf9;
+  --color-warmGray-100: #f5f4f2;
+  --color-warmGray-200: #e7e5e1;
+  --color-warmGray-300: #d6d3cd;
+  --color-warmGray-400: #a8a49c;
+  --color-warmGray-500: #7a766e;
+  --color-warmGray-600: #5c5850;
+  --color-warmGray-700: #454239;
+  --color-warmGray-800: #33312a;
+  --color-warmGray-900: #252320;
+
+  /* Typography */
+  --font-sans: "Inter", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+}
+
+:root {
+  --background: #faf8f5;
+  --foreground: #33312a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #8b7355;
+  outline-offset: 2px;
+}
+
+/* Selection styles */
+::selection {
+  background-color: #e8dfd3;
+  color: #33312a;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

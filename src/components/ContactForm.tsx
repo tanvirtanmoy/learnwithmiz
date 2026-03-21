@@ -16,15 +16,39 @@ export default function ContactForm() {
     message: '',
   });
 
+  const [error, setError] = useState('');
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
+    setError('');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          subject: `Learn with Miz - ${formData.interest || 'New Contact'}`,
+          from_name: formData.name,
+          email: formData.email,
+          interest: formData.interest,
+          message: formData.message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setIsSuccess(true);
+      } else {
+        setError(d.contact.form.error || 'Something went wrong. Please try again.');
+      }
+    } catch {
+      setError(d.contact.form.error || 'Something went wrong. Please try again.');
+    }
+
     setIsSubmitting(false);
-    setIsSuccess(true);
   };
 
   if (isSuccess) {
@@ -122,6 +146,11 @@ export default function ContactForm() {
         </div>
 
         {/* Submit */}
+        {error && (
+          <div className="bg-red-50 text-red-600 px-4 py-3 rounded-lg text-sm">
+            {error}
+          </div>
+        )}
         <Button
           type="submit"
           variant="primary"

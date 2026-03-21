@@ -533,6 +533,7 @@ export const ja = {
       messagePlaceholder: 'ご質問やご希望をお聞かせください（任意）',
       submit: '送信する',
       submitting: '送信中...',
+      error: '送信に失敗しました。もう一度お試しください。',
     },
     success: {
       title: 'お問い合わせありがとうございます！',

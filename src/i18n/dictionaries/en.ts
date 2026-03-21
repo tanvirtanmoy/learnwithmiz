@@ -535,6 +535,7 @@ export const en: Dictionary = {
       messagePlaceholder: 'Share your questions or what you\'re looking for (optional)',
       submit: 'Submit',
       submitting: 'Sending...',
+      error: 'Something went wrong. Please try again.',
     },
     success: {
       title: 'Thank you for reaching out!',

@@ -68,8 +68,18 @@ export default function AboutPage() {
       </section>
 
       {/* Teaching Philosophy Section */}
-      <section className="py-16 md:py-20 bg-cream">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 md:py-20 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/cafe-interior.jpeg"
+            alt=""
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-cream/90" />
+        </div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             title={d.about.philosophy.title}
             subtitle={d.about.philosophy.subtitle}

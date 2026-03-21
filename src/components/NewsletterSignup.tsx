@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { useLanguage } from '@/i18n';
 import Button from './Button';
 
@@ -23,8 +24,18 @@ export default function NewsletterSignup() {
   };
 
   return (
-    <section className="py-16 md:py-20 bg-gradient-to-r from-cafe-50 to-cream">
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className="relative py-16 md:py-20 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/study-table.jpeg"
+          alt=""
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-cafe-50/90 to-cream/90" />
+      </div>
+      <div className="relative max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-warmGray-800 mb-3">
           {d.home.newsletter.title}
         </h2>

@@ -10,6 +10,7 @@ export default function Footer() {
     { href: '/about', label: d.nav.about },
     { href: '/learn-dutch', label: d.nav.learnDutch },
     { href: '/lessons', label: d.nav.lessons },
+    { href: '/blog', label: d.nav.blog },
     { href: '/faq', label: d.nav.faq },
     { href: '/contact', label: d.nav.contact },
   ];

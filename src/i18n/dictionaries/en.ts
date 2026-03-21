@@ -7,6 +7,7 @@ export const en: Dictionary = {
     about: 'About Miz',
     learnDutch: 'Dutch Learning Guide',
     lessons: 'Lessons',
+    blog: 'Blog',
     faq: 'FAQ',
     contact: 'Contact',
   },
@@ -550,6 +551,67 @@ export const en: Dictionary = {
     },
   },
 
+  // Blog
+  blog: {
+    hero: {
+      title: "Miz's Blog",
+      subtitle: 'Tips for learning Dutch and stories from life in the Netherlands',
+    },
+    readMore: 'Read more',
+    backToBlog: 'Back to Blog',
+    postNotFound: 'Article not found.',
+    moreComingSoon: 'More articles coming soon. Stay tuned!',
+    posts: [
+      {
+        slug: 'dutch-greetings-basics',
+        title: 'Dutch Greetings: Start with These!',
+        excerpt: 'Essential Dutch greetings for everyday life in the Netherlands. Learn these and you can start using them tomorrow.',
+        category: 'Dutch Basics',
+        date: 'March 21, 2026',
+        image: '/cafe-interior.jpeg',
+        content: [
+          { type: 'paragraph' as const, text: 'When you start living in the Netherlands, greetings are the first thing you need. Even though English works in the Netherlands, greeting people in Dutch instantly makes interactions warmer.' },
+          { type: 'heading' as const, text: 'Basic Greetings' },
+          { type: 'list' as const, items: ['Hallo \u2014 "Hello" - the most versatile greeting', 'Goedemorgen \u2014 "Good morning"', 'Goedemiddag \u2014 "Good afternoon"', 'Goedenavond \u2014 "Good evening"'] },
+          { type: 'heading' as const, text: 'At Shops & Caf\u00e9s' },
+          { type: 'paragraph' as const, text: "Let's also learn some simple phrases you can use at supermarkets and caf\u00e9s." },
+          { type: 'list' as const, items: ['Dank je wel \u2014 "Thank you"', 'Alsjeblieft \u2014 "Here you go" (when handing something)', 'Tot ziens \u2014 "Goodbye"', 'Dag \u2014 "Bye" (casual)'] },
+          { type: 'tip' as const, text: 'Start with just "Hallo" and "Dank je wel"! These two phrases alone can change your daily experience in the Netherlands.' },
+        ],
+      },
+      {
+        slug: 'supermarket-dutch',
+        title: 'Dutch Phrases for the Supermarket',
+        excerpt: 'Useful Dutch for shopping at Albert Heijn and Jumbo. From checkout conversations to reading product labels.',
+        category: 'Daily Conversation',
+        date: 'March 18, 2026',
+        image: '/study-table.jpeg',
+        content: [
+          { type: 'paragraph' as const, text: 'The supermarket is one of the places you visit most in daily life in the Netherlands. Learning Dutch for this setting makes shopping more enjoyable.' },
+          { type: 'heading' as const, text: 'At the Checkout' },
+          { type: 'list' as const, items: ['Hallo! \u2014 Smile and greet the cashier back', 'Een tasje, alstublieft \u2014 "A bag, please"', 'Heeft u een bonuskaart? \u2014 "Do you have a bonus card?" (commonly asked at AH)'] },
+          { type: 'tip' as const, text: 'You can register for an Albert Heijn bonus card for free on their app. Since you\'ll hear this question often, learning to reply "Ja" or "Nee" is helpful.' },
+        ],
+      },
+      {
+        slug: 'life-in-netherlands',
+        title: 'Things I Wish I Knew Before Moving to the Netherlands',
+        excerpt: 'From confusing moments to valuable lessons \u2014 Miz shares advice for newcomers to the Netherlands.',
+        category: 'Life in NL',
+        date: 'March 15, 2026',
+        image: '/hero-canal.jpeg',
+        content: [
+          { type: 'paragraph' as const, text: 'When I first moved to the Netherlands, there were so many things that confused me. Today, I want to share the things I wish I had known from the start.' },
+          { type: 'heading' as const, text: 'Weather & Clothing' },
+          { type: 'paragraph' as const, text: 'The Netherlands is famous for unpredictable weather. There\'s even a Dutch saying: "Er is geen slecht weer, alleen slechte kleding" (There\'s no bad weather, only bad clothing).' },
+          { type: 'heading' as const, text: 'Cycling Culture' },
+          { type: 'paragraph' as const, text: 'In the Netherlands, the bicycle is the main mode of transport. There are well-maintained cycling lanes everywhere, and even if it feels scary at first, you\'ll get used to it quickly.' },
+          { type: 'tip' as const, text: 'Marktplaats (Dutch version of Craigslist/Mercari) is the best place to find a secondhand bicycle.' },
+        ],
+      },
+    ],
+  },
+
   // SEO
   seo: {
     home: {
@@ -575,6 +637,10 @@ export const en: Dictionary = {
     contact: {
       title: 'Contact | Learn with Miz',
       description: 'Inquiries about Dutch lessons, waitlist registration. Feel free to reach out.',
+    },
+    blog: {
+      title: 'Blog | Learn with Miz',
+      description: 'Dutch learning tips and stories from life in the Netherlands. Blog articles by Miz.',
     },
   },
 };

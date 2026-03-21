@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useLanguage } from '@/i18n';
 import { Button, Card, SectionHeader, InstructorCard, NewsletterSignup } from '@/components';
 
@@ -33,8 +34,19 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-warmWhite to-cream">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-20 md:py-32 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/hero-canal.jpeg"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-warmWhite/85 via-warmWhite/75 to-cream/90" />
+        </div>
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-warmGray-800 leading-tight mb-4">
             {d.home.hero.title}
           </h1>

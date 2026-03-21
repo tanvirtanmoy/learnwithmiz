@@ -5,6 +5,7 @@ export const ja = {
     about: 'Mizについて',
     learnDutch: 'オランダ語学習ガイド',
     lessons: 'レッスン',
+    blog: 'ブログ',
     faq: 'よくある質問',
     contact: 'お問い合わせ',
   },
@@ -548,6 +549,67 @@ export const ja = {
     },
   },
 
+  // Blog
+  blog: {
+    hero: {
+      title: 'Mizのブログ',
+      subtitle: 'オランダ語学習のコツや、オランダ生活のエピソードをお届けします',
+    },
+    readMore: '続きを読む',
+    backToBlog: 'ブログ一覧に戻る',
+    postNotFound: '記事が見つかりませんでした。',
+    moreComingSoon: '新しい記事を準備中です。お楽しみに！',
+    posts: [
+      {
+        slug: 'dutch-greetings-basics',
+        title: 'オランダ語の挨拶、まずはこれだけ！',
+        excerpt: 'オランダでの日常生活ですぐに使える挨拶表現を紹介します。これだけ覚えておけば、明日から使えます。',
+        category: 'オランダ語入門',
+        date: '2026年3月21日',
+        image: '/cafe-interior.jpeg',
+        content: [
+          { type: 'paragraph' as const, text: 'オランダで生活を始めると、まず最初に必要になるのが挨拶です。英語が通じるオランダでも、オランダ語で挨拶するだけで、相手の反応がぐっと温かくなります。' },
+          { type: 'heading' as const, text: '基本の挨拶' },
+          { type: 'list' as const, items: ['Hallo（ハロ）— 「こんにちは」一番使える挨拶', 'Goedemorgen（フーデモルヘン）— 「おはようございます」', 'Goedemiddag（フーデミダッフ）— 「こんにちは（午後）」', 'Goedenavond（フーデナーヴォント）— 「こんばんは」'] },
+          { type: 'heading' as const, text: 'お店での基本会話' },
+          { type: 'paragraph' as const, text: 'スーパーやカフェで使える簡単なフレーズも覚えておきましょう。' },
+          { type: 'list' as const, items: ['Dank je wel（ダンクヤウェル）— 「ありがとう」', 'Alsjeblieft（アルシェブリーフト）— 「どうぞ」（渡す時）', 'Tot ziens（トットジーンス）— 「さようなら」', 'Dag（ダッフ）— 「じゃあね」（カジュアル）'] },
+          { type: 'tip' as const, text: '最初は「Hallo」と「Dank je wel」だけでOK！この２つを使うだけで、オランダでの日常が少し変わります。' },
+        ],
+      },
+      {
+        slug: 'supermarket-dutch',
+        title: 'スーパーで使えるオランダ語フレーズ',
+        excerpt: 'Albert HeijnやJumboでのお買い物に役立つオランダ語。レジでの会話や、商品ラベルの読み方も。',
+        category: '日常会話',
+        date: '2026年3月18日',
+        image: '/study-table.jpeg',
+        content: [
+          { type: 'paragraph' as const, text: 'オランダでの日常生活で最もよく行く場所のひとつがスーパーマーケット。ここで使えるオランダ語を覚えると、お買い物がもっと楽しくなります。' },
+          { type: 'heading' as const, text: 'レジでの会話' },
+          { type: 'list' as const, items: ['Hallo！ — レジの人が声をかけてくれたら、笑顔で返しましょう', 'Een tasje, alstublieft（アインタッシャ、アルストゥブリーフト）— 「袋をください」', 'Heeft u een bonuskaart?（ボーナスカールト）— 「ボーナスカードはお持ちですか？」（AHでよく聞かれます）'] },
+          { type: 'tip' as const, text: 'Albert Heijnのボーナスカードはアプリで無料登録できます。よく聞かれるので、「Ja」か「Nee」だけでも答えられるようにしておくと安心です。' },
+        ],
+      },
+      {
+        slug: 'life-in-netherlands',
+        title: 'オランダ生活、最初に知っておきたかったこと',
+        excerpt: 'オランダに引っ越してきた頃に戸惑ったこと、今だから言えるアドバイスをMizがシェアします。',
+        category: 'オランダ生活',
+        date: '2026年3月15日',
+        image: '/hero-canal.jpeg',
+        content: [
+          { type: 'paragraph' as const, text: 'オランダに引っ越してきたばかりの頃、色々なことに戸惑った記憶があります。今日は、私が「最初に知っておけばよかった」と思うことをシェアします。' },
+          { type: 'heading' as const, text: '天気と服装' },
+          { type: 'paragraph' as const, text: 'オランダの天気は変わりやすいことで有名です。「Er is geen slecht weer, alleen slechte kleding」（悪い天気なんてない、悪い服装があるだけ）というオランダのことわざがあるほどです。' },
+          { type: 'heading' as const, text: '自転車文化' },
+          { type: 'paragraph' as const, text: 'オランダでは自転車が主な移動手段。自転車専用レーンがしっかり整備されていて、最初は少し怖くても、すぐに慣れます。' },
+          { type: 'tip' as const, text: '中古の自転車はMarktplaats（オランダ版メルカリ）で見つけるのがおすすめです。' },
+        ],
+      },
+    ],
+  },
+
   // SEO
   seo: {
     home: {
@@ -573,6 +635,10 @@ export const ja = {
     contact: {
       title: 'お問い合わせ | Learn with Miz',
       description: 'オランダ語レッスンについてのお問い合わせ、ウェイトリスト登録。お気軽にご連絡ください。',
+    },
+    blog: {
+      title: 'ブログ | Learn with Miz',
+      description: 'オランダ語学習のコツやオランダ生活のエピソード。Mizがお届けするブログ記事。',
     },
   },
 };

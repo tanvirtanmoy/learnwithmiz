@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useLanguage } from '@/i18n';
 import { HeroSection, Card, SectionHeader, CTASection } from '@/components';
 
@@ -19,10 +20,17 @@ export default function AboutPage() {
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-12 items-center">
-            {/* Photo placeholder */}
+            {/* Photo */}
             <div className="flex-shrink-0">
-              <div className="w-56 h-56 md:w-64 md:h-64 bg-gradient-to-br from-cafe-100 to-cafe-200 rounded-2xl flex items-center justify-center shadow-sm">
-                <span className="text-7xl">👩‍🏫</span>
+              <div className="w-56 h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-sm">
+                <Image
+                  src="/mizuki.jpeg"
+                  alt="Mizuki"
+                  width={256}
+                  height={256}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
             </div>
 
@@ -37,6 +45,22 @@ export default function AboutPage() {
                     {paragraph}
                   </p>
                 ))}
+              </div>
+
+              {/* Background */}
+              <div className="mt-8 pt-6 border-t border-cafe-200">
+                <h3 className="text-lg font-semibold text-warmGray-800 mb-4 flex items-center gap-2">
+                  <span className="text-cafe-500">🌿</span>
+                  {d.about.intro.background.title}
+                </h3>
+                <ul className="space-y-2">
+                  {d.about.intro.background.items.map((item, index) => (
+                    <li key={index} className="flex items-start gap-2 text-warmGray-600 text-sm">
+                      <span className="text-cafe-500 mt-1">•</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>

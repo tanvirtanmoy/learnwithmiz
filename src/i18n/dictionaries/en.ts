@@ -168,10 +168,20 @@ export const en: Dictionary = {
     intro: {
       title: "Hello, I'm Mizuki",
       paragraphs: [
-        'I live in the Netherlands and teach Dutch to Japanese people.',
-        "I've experienced firsthand how challenging it is to learn a new language abroad. Dutch, in particular, has features quite different from both Japanese and English, and it can feel overwhelming at first.",
-        'That\'s why I focus on explaining Dutch from a Japanese perspective and teaching expressions you can actually use in daily life. Let\'s learn "Dutch for living in the Netherlands," not just "textbook Dutch."',
+        'I work as a company employee in the Netherlands while teaching Dutch and English lessons to Japanese people.',
+        "I've experienced firsthand how challenging it is to learn a foreign language. Dutch, in particular, has many differences from English, so it can feel confusing at first.",
+        "That's why I focus on explaining things as clearly as possible from a Japanese perspective. Let's learn practical Dutch you can use in daily life, step by step, at your own pace.",
+        'I strive to create gentle, sustainable lessons where you can feel that "learning Dutch is fun."',
       ],
+      background: {
+        title: 'Background',
+        items: [
+          'Graduated from the Faculty of Foreign Languages, English Department',
+          'One year exchange at Vrije Universiteit Amsterdam during university',
+          'Taught English to Japanese businesspeople and executives at a major language school',
+          'Over 5 years of teaching experience, primarily with working professionals',
+        ],
+      },
     },
     philosophy: {
       title: 'Teaching Philosophy',

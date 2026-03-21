@@ -41,35 +41,30 @@ export const en: Dictionary = {
   // Home Page
   home: {
     hero: {
-      title: 'Make life in the Netherlands truly yours',
+      title: 'Dutch lessons that make life in the Netherlands more enjoyable',
       subtitle: 'Friendly Dutch lessons for Japanese learners',
-      description: 'A platform designed for Japanese people living in the Netherlands to learn practical Dutch in an easy-to-understand way.',
+      description: 'A welcoming place to learn practical Dutch for everyday life in the Netherlands, naturally and enjoyably.',
       cta1: 'View Lessons',
       cta2: 'View Dutch Learning Guide',
     },
     whyDutch: {
-      title: 'Why Learn Dutch?',
-      subtitle: 'You can get by with English. But knowing Dutch changes everything.',
+      title: 'What Dutch Opens Up For You',
+      subtitle: 'Knowing Dutch makes every day a little brighter',
       reasons: [
         {
-          title: 'Smoother Daily Life',
-          description: 'Shopping, doctor visits, chatting with neighbors. A little Dutch makes everyday life so much easier.',
+          title: 'Enjoy Small Everyday Conversations',
+          description: 'Chatting at the supermarket, ordering at a café. Just knowing a little Dutch makes these daily moments more enjoyable.',
           icon: 'daily',
         },
         {
-          title: 'Confidence with Official Matters',
-          description: 'Municipality procedures, school communications. Knowing Dutch gives you peace of mind.',
+          title: 'Feel More Confident and Secure',
+          description: 'Municipality procedures, school and hospital communications. A little Dutch turns anxiety into peace of mind.',
           icon: 'official',
         },
         {
-          title: 'More Career Opportunities',
-          description: 'Dutch opens doors to local companies and helps you build stronger relationships with colleagues.',
+          title: 'Build Natural Connections with Others',
+          description: 'Conversations with colleagues and neighbors. Speaking a little Dutch brings people closer. These connections can lead to new friendships and opportunities.',
           icon: 'work',
-        },
-        {
-          title: 'A True Sense of Belonging',
-          description: "Being able to greet, to participate in conversations. Even a little Dutch helps you feel like you belong here.",
-          icon: 'belonging',
         },
       ],
     },

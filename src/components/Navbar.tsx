@@ -14,6 +14,7 @@ export default function Navbar() {
     { href: '/about', label: d.nav.about },
     { href: '/learn-dutch', label: d.nav.learnDutch },
     { href: '/lessons', label: d.nav.lessons },
+    { href: '/pricing', label: d.nav.pricing },
     { href: '/blog', label: d.nav.blog },
     { href: '/faq', label: d.nav.faq },
     { href: '/contact', label: d.nav.contact },

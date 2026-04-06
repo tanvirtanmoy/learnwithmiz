@@ -1,0 +1,166 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ─── Student ────────────────────────────────────────────────────────
+model Student {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  locale    String   @default("ja")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  enrollments    Enrollment[]
+  billingProfile BillingProfile?
+  paymentRecords PaymentRecord[]
+
+  @@map("students")
+}
+
+// ─── Enrollment ─────────────────────────────────────────────────────
+enum PaymentOption {
+  full_payment
+  installment_3_month
+}
+
+enum EnrollmentStatus {
+  active
+  expired
+  completed
+  payment_issue
+  canceled
+}
+
+model Enrollment {
+  id                   String           @id @default(cuid())
+  studentId            String           @map("student_id")
+  courseCode            String           @default("personal_dutch_12_lessons") @map("course_code")
+  instructorName       String           @default("Mizuki") @map("instructor_name")
+  paymentOption        PaymentOption    @map("payment_option")
+  status               EnrollmentStatus @default(active)
+  courseStartDate      DateTime         @map("course_start_date")
+  courseExpiryDate     DateTime         @map("course_expiry_date")
+  totalLessons         Int              @default(12) @map("total_lessons")
+  lessonsUsed          Int              @default(0) @map("lessons_used")
+  lateChangeFreeUsed   Boolean          @default(false) @map("late_change_free_used")
+  lateCancellationCount Int             @default(0) @map("late_cancellation_count")
+  refundPolicyVersion  String           @default("v1") @map("refund_policy_version")
+  createdAt            DateTime         @default(now()) @map("created_at")
+  updatedAt            DateTime         @updatedAt @map("updated_at")
+
+  student        Student         @relation(fields: [studentId], references: [id])
+  paymentRecords PaymentRecord[]
+  lessonBookings LessonBooking[]
+
+  @@map("enrollments")
+}
+
+// ─── BillingProfile ─────────────────────────────────────────────────
+enum PaymentStatus {
+  pending
+  paid_in_full
+  installment_active
+  payment_failed
+  past_due
+  canceled
+}
+
+model BillingProfile {
+  id                           String        @id @default(cuid())
+  studentId                    String        @unique @map("student_id")
+  stripeCustomerId             String?       @unique @map("stripe_customer_id")
+  stripeSubscriptionId         String?       @unique @map("stripe_subscription_id")
+  stripeSubscriptionScheduleId String?       @map("stripe_subscription_schedule_id")
+  stripeCheckoutSessionId      String?       @map("stripe_checkout_session_id")
+  paymentStatus                PaymentStatus @default(pending) @map("payment_status")
+  installmentsPaidCount        Int           @default(0) @map("installments_paid_count")
+  installmentLimit             Int           @default(3) @map("installment_limit")
+  currency                     String        @default("eur")
+  createdAt                    DateTime      @default(now()) @map("created_at")
+  updatedAt                    DateTime      @updatedAt @map("updated_at")
+
+  student Student @relation(fields: [studentId], references: [id])
+
+  @@map("billing_profiles")
+}
+
+// ─── PaymentRecord ──────────────────────────────────────────────────
+enum PaymentType {
+  one_time
+  installment
+}
+
+enum PaymentRecordStatus {
+  pending
+  paid
+  failed
+  refunded
+  partially_refunded
+}
+
+model PaymentRecord {
+  id                   String              @id @default(cuid())
+  studentId            String              @map("student_id")
+  enrollmentId         String              @map("enrollment_id")
+  stripeEventId        String              @unique @map("stripe_event_id")
+  stripeInvoiceId      String?             @map("stripe_invoice_id")
+  stripePaymentIntentId String?            @map("stripe_payment_intent_id")
+  stripeChargeId       String?             @map("stripe_charge_id")
+  amount               Int                 // in cents
+  currency             String              @default("eur")
+  type                 PaymentType
+  status               PaymentRecordStatus @default(pending)
+  paidAt               DateTime?           @map("paid_at")
+  rawMetadata          Json?               @map("raw_metadata")
+  createdAt            DateTime            @default(now()) @map("created_at")
+
+  student    Student    @relation(fields: [studentId], references: [id])
+  enrollment Enrollment @relation(fields: [enrollmentId], references: [id])
+
+  @@map("payment_records")
+}
+
+// ─── LessonBooking ──────────────────────────────────────────────────
+enum LessonBookingStatus {
+  scheduled
+  completed
+  canceled_early
+  canceled_late
+  rescheduled
+}
+
+model LessonBooking {
+  id             String              @id @default(cuid())
+  enrollmentId   String              @map("enrollment_id")
+  scheduledStart DateTime            @map("scheduled_start")
+  scheduledEnd   DateTime            @map("scheduled_end")
+  status         LessonBookingStatus @default(scheduled)
+  countedAsUsed  Boolean             @default(false) @map("counted_as_used")
+  notes          String?
+  createdAt      DateTime            @default(now()) @map("created_at")
+  updatedAt      DateTime            @updatedAt @map("updated_at")
+
+  enrollment Enrollment @relation(fields: [enrollmentId], references: [id])
+
+  @@map("lesson_bookings")
+}
+
+// ─── ProcessedWebhookEvent ──────────────────────────────────────────
+// For idempotency: track processed Stripe event IDs
+model ProcessedWebhookEvent {
+  id              String   @id @default(cuid())
+  stripeEventId   String   @unique @map("stripe_event_id")
+  eventType       String   @map("event_type")
+  processedAt     DateTime @default(now()) @map("processed_at")
+
+  @@map("processed_webhook_events")
+}

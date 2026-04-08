@@ -31,11 +31,11 @@ export default function HeroSection({
             {subtitle}
           </p>
         )}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-warmGray-800 leading-tight mb-4">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-warmGray-800 leading-tight mb-4">
           {title}
         </h1>
         {description && (
-          <p className="text-lg md:text-xl text-warmGray-600 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-warmGray-600 leading-relaxed max-w-2xl mx-auto whitespace-pre-line">
             {description}
           </p>
         )}

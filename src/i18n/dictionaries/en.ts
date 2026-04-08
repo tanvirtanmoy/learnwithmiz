@@ -4,9 +4,9 @@ export const en: Dictionary = {
   // Navigation
   nav: {
     home: 'Home',
-    about: 'About Miz',
+    about: 'Instructor',
     learnDutch: 'Dutch Learning Guide',
-    lessons: 'Lessons',
+    lessons: 'Course',
     blog: 'Blog',
     faq: 'FAQ',
     contact: 'Contact',
@@ -20,7 +20,7 @@ export const en: Dictionary = {
     getStarted: 'Get Started',
     joinWaitlist: 'Join Waitlist',
     contactUs: 'Contact Us',
-    viewLessons: 'View Lessons',
+    viewLessons: 'View Course',
     viewGuide: 'View Dutch Learning Guide',
     comingSoon: 'Coming Soon',
     submit: 'Submit',
@@ -29,14 +29,15 @@ export const en: Dictionary = {
     optional: 'Optional',
     close: 'Close',
     backToHome: 'Back to Home',
+    trialLesson: 'Book a Free Trial Lesson',
   },
 
   // Footer
   footer: {
-    tagline: 'Friendly Dutch lessons for Japanese learners',
+    tagline: '🌸 Friendly Dutch lessons for Japanese learners 🌸',
     quickLinks: 'Quick Links',
     connect: 'Connect',
-    copyright: '© 2026 Learn with Miz. All rights reserved.',
+    copyright: '© 2026 Hana Language School. All rights reserved.',
     privacyPolicy: 'Privacy Policy',
     termsOfService: 'Terms of Service',
   },
@@ -44,117 +45,110 @@ export const en: Dictionary = {
   // Home Page
   home: {
     hero: {
-      title: 'Dutch lessons that make life in the Netherlands more enjoyable',
-      subtitle: 'Friendly Dutch lessons for Japanese learners',
-      description: 'A welcoming place to learn practical Dutch for everyday life in the Netherlands, naturally and enjoyably.',
-      cta1: 'View Lessons',
-      cta2: 'View Dutch Learning Guide',
+      title: '🇳🇱 Master Dutch Basics in 3 Months',
+      subtitle: '🌸 Hana Language School 🌸',
+      description: 'Friendly online Dutch lessons for Japanese learners\n\nLearn the basics of Dutch in 3 months,\nclearly explained in Japanese for efficient learning.',
+      cta1: 'Free Trial Lesson',
+      cta2: 'View Course Details',
     },
-    whyDutch: {
-      title: 'What Dutch Opens Up For You',
-      subtitle: 'Knowing Dutch makes every day a little brighter',
-      reasons: [
-        {
-          title: 'Enjoy Small Everyday Conversations',
-          description: 'Chatting at the supermarket, ordering at a café. Just knowing a little Dutch makes these daily moments more enjoyable.',
-          icon: 'daily',
-        },
-        {
-          title: 'Feel More Confident and Secure',
-          description: 'Municipality procedures, school and hospital communications. A little Dutch turns anxiety into peace of mind.',
-          icon: 'official',
-        },
-        {
-          title: 'Build Natural Connections with Others',
-          description: 'Conversations with colleagues and neighbors. Speaking a little Dutch brings people closer. These connections can lead to new friendships and opportunities.',
-          icon: 'work',
-        },
+    painPoints: {
+      title: '🌿 Sound familiar?',
+      items: [
+        'I want to learn Dutch, but I don\'t know where to start…',
+        'I can\'t keep up with English-only classes…',
+        'I tried self-study but couldn\'t continue…',
+        'I want to learn, but I\'m too busy with work and childcare…',
+        'I want to understand what\'s being said at the municipality or doctor\'s office…',
+      ],
+      cta: 'This course is designed for people just like you 🌷',
+    },
+    courseIntro: {
+      title: '🌷 Learn Dutch gently, in Japanese',
+      paragraphs: [
+        'Hana Language School is a 3-month Dutch basics course designed for Japanese learners.',
+        'Our one-on-one online lessons, taught in Japanese, help you build essential grammar, vocabulary, and conversation skills — at your own pace.',
+        'Whether you\'re a complete beginner or have tried learning before, we\'ll support your Dutch journey with care and clarity.',
       ],
     },
-    whyDifferent: {
-      title: 'Why Learn with Miz?',
-      subtitle: 'Lessons designed specifically for Japanese learners',
-      points: [
+    features: {
+      title: '🌸 What makes Hana Language School special 🌸',
+      items: [
         {
-          title: 'Explanations in Japanese',
-          description: 'Grammar and pronunciation explained in Japanese. Teaching that understands where Japanese learners struggle.',
+          number: '❶',
+          title: '100% in Japanese',
+          description: 'All lessons, materials, and support are in Japanese, so you can learn comfortably without worrying about language barriers.',
         },
         {
-          title: 'Practical Content You Can Use',
-          description: 'Not textbook examples, but phrases you\'ll actually use in real life in the Netherlands.',
+          number: '❷',
+          title: 'Original materials by Miz',
+          description: 'Custom-made teaching materials designed specifically for Japanese learners. Grammar is explained with Japanese-English comparisons for deeper understanding.',
         },
         {
-          title: 'Kind and Supportive Teaching',
-          description: "It's okay to make mistakes. Progress at your own pace with supportive guidance.",
+          number: '❸',
+          title: 'Flexible scheduling',
+          description: 'Schedule each lesson at a time that works for you. Perfect for balancing work, childcare, or studying.',
         },
         {
-          title: 'Step-by-Step Progress',
-          description: 'A clear learning path to guide you from beginner to confident speaker.',
+          number: '❹',
+          title: 'Support via WhatsApp',
+          description: 'Have a question between lessons? Reach out anytime via WhatsApp. No need to wait until the next session.',
+        },
+        {
+          number: '❺',
+          title: 'Career advice in the Netherlands',
+          description: 'Need help with LinkedIn, CV writing, or job searching in the Netherlands? We can support that too.',
         },
       ],
     },
     learningPath: {
-      title: 'Your Learning Journey',
-      subtitle: 'Progress at your own pace, one step at a time',
+      title: '🌿 Learning Steps',
+      subtitle: 'Build a solid foundation in 3 months',
       steps: [
         {
-          title: 'First Steps in Dutch',
-          description: "Let's start with greetings, numbers, and basic expressions.",
-          level: 'Beginner',
+          title: 'Step 1: The Basics',
+          description: 'Learn essential greetings, pronunciation, numbers, and basic grammar — the building blocks of Dutch.',
+          level: 'Month 1',
         },
         {
-          title: 'Basic Conversations',
-          description: 'Learn to shop and introduce yourself.',
-          level: 'Elementary',
+          title: 'Step 2: Daily Conversations',
+          description: 'Practice shopping, ordering food, introductions, and other real-life situations you\'ll encounter.',
+          level: 'Month 2',
         },
         {
-          title: 'Dutch for Daily Life',
-          description: 'Dutch for the doctor, school, work, and more.',
-          level: 'Pre-Intermediate',
-        },
-        {
-          title: 'Speak with Confidence',
-          description: 'Smoother, more natural conversations.',
-          level: 'Intermediate',
+          title: 'Step 3: Practical Fluency',
+          description: 'Handle conversations at the doctor, school, workplace, and municipality with confidence.',
+          level: 'Month 3',
         },
       ],
     },
     instructor: {
-      title: 'Meet Your Instructor',
+      title: '👩‍🏫 Meet Your Instructor',
       name: 'Mizuki',
-      role: 'Dutch Language Instructor',
-      bio: 'Based in the Netherlands. I understand the challenges and anxieties Japanese people face when learning Dutch, and I prioritize kind, thorough instruction. My goal is to help you enjoy life in the Netherlands even more.',
+      role: 'Dutch Language Instructor at Hana Language School',
+      bio: 'Living in the Netherlands for 7 years. I understand the challenges Japanese learners face with Dutch, and I focus on kind, thorough instruction.',
+      credentials: [
+        'Bachelor of Arts in English (Faculty of Foreign Languages)',
+        '1-year exchange at VU Amsterdam',
+        '7+ years living in the Netherlands',
+        '5+ years teaching experience (English & Dutch for Japanese learners)',
+        'Former instructor at a major language school for business professionals',
+      ],
       cta: 'Learn more about Miz',
     },
-    futureOfferings: {
-      title: 'Coming Soon',
-      subtitle: 'More learning options in development',
-      items: [
-        {
-          title: 'Recorded Lessons',
-          description: 'Clear video lessons you can study at your own pace.',
-          status: 'In Development',
-        },
-        {
-          title: 'Live Lessons',
-          description: 'Interactive online lessons where you can ask questions in real-time.',
-          status: 'In Development',
-        },
-        {
-          title: 'Structured Courses',
-          description: 'Step-by-step learning courses organized by level.',
-          status: 'In Development',
-        },
-        {
-          title: 'Study Materials',
-          description: 'Downloadable review materials and worksheets.',
-          status: 'In Development',
-        },
+    howToJoin: {
+      title: '🌿 How to Get Started',
+      steps: [
+        'Book a free trial lesson',
+        'Confirm your level & goals',
+        'Course introduction',
+        'Start your lessons',
       ],
+      message: 'Make your life in the Netherlands more comfortable and enjoyable 🌷\nStart learning Dutch gently, at your own pace.',
+      cta: 'Book a Free Trial Lesson',
     },
     newsletter: {
       title: 'Stay Updated',
-      subtitle: "Get notified about new lessons and course launches",
+      subtitle: 'Get notified about new lessons and course launches',
       placeholder: 'Your email address',
       cta: 'Subscribe',
       privacy: 'We respect your privacy. No spam.',
@@ -165,24 +159,25 @@ export const en: Dictionary = {
   // About Page
   about: {
     hero: {
-      title: 'About Miz',
+      title: 'About the Instructor 🌿',
       subtitle: 'Supporting your Dutch learning journey',
     },
     intro: {
       title: "Hello, I'm Mizuki",
       paragraphs: [
-        'I work as a company employee in the Netherlands while teaching Dutch and English lessons to Japanese people.',
-        "I've experienced firsthand how challenging it is to learn a foreign language. Dutch, in particular, has many differences from English, so it can feel confusing at first.",
-        "That's why I focus on explaining things as clearly as possible from a Japanese perspective. Let's learn practical Dutch you can use in daily life, step by step, at your own pace.",
-        'I strive to create gentle, sustainable lessons where you can feel that "learning Dutch is fun."',
+        'I work as a company employee in the Netherlands while teaching Dutch lessons to Japanese learners.',
+        "Having experienced firsthand how challenging it is to learn Dutch, I understand the struggles Japanese learners face — from unfamiliar grammar to confusing pronunciation.",
+        "That's why all my lessons are conducted in Japanese. I explain things clearly, step by step, so you can learn at your own pace without feeling lost.",
+        'My goal is to create kind, sustainable lessons where you can feel that "learning Dutch is actually fun."',
       ],
       background: {
-        title: 'Background',
+        title: 'Credentials',
         items: [
-          'Graduated from the Faculty of Foreign Languages, English Department',
-          'One year exchange at Vrije Universiteit Amsterdam during university',
-          'Taught English to Japanese businesspeople and executives at a major language school',
-          'Over 5 years of teaching experience, primarily with working professionals',
+          'Bachelor of Arts in English (Faculty of Foreign Languages)',
+          '1-year exchange at VU Amsterdam',
+          '7+ years living in the Netherlands',
+          '5+ years teaching experience (English & Dutch for Japanese learners)',
+          'Former instructor at a major language school for business professionals',
         ],
       },
     },
@@ -191,313 +186,263 @@ export const en: Dictionary = {
       subtitle: 'What I value',
       points: [
         {
-          title: 'Kind and Thorough',
-          description: "There's no need to fear mistakes. I create a safe space for questions and explain things carefully.",
+          title: 'Thorough instruction tailored for Japanese learners',
+          description: 'No English required — lessons are fully in Japanese. I carefully explain grammar and word order patterns that Japanese learners commonly find confusing.',
         },
         {
-          title: 'Practical',
-          description: 'Content based on real-life situations, so you can use what you learn right away.',
+          title: 'Fully personalized lessons',
+          description: 'All lessons are one-on-one. I adjust the content and pace to match your level, goals, and lifestyle.',
         },
         {
-          title: 'At Your Pace',
-          description: "No rush. I support sustainable learning that fits your lifestyle and goals.",
+          title: 'Sustainable learning support',
+          description: 'Weekly assignments help solidify what you learn. Ask questions anytime via WhatsApp. A structured approach that helps you keep going without burnout.',
         },
         {
-          title: 'Steady Progress',
-          description: 'One step at a time, but surely. Building confidence through small victories.',
+          title: 'Guidance rooted in real experience',
+          description: 'I learned Dutch from scratch myself and have experienced studying, working, and living in the Netherlands. I deeply understand the challenges Japanese learners face.',
         },
       ],
     },
     forWhom: {
       title: "Who It's For",
       items: [
-        'Japanese people living in the Netherlands',
-        'Complete beginners to Dutch',
-        'Those who find English-only resources difficult',
-        'Those who want to use Dutch in daily life',
+        'Complete beginners starting Dutch from zero',
+        'Those who find English-only Dutch classes difficult',
+        'Those who want clear explanations in Japanese',
         'Those who want to learn at their own pace',
+        'Those preparing for Inburgeren / NT2',
         'Those who want more confidence in life in the Netherlands',
       ],
     },
     cta: {
       title: 'Ready to Start Learning?',
-      description: "Feel free to reach out. Let's design a learning plan that fits your goals and pace.",
-      button: 'Contact',
+      description: 'Try a free trial lesson first to experience the teaching style and atmosphere.',
+      button: 'Book a Free Trial Lesson',
     },
   },
 
   // Learn Dutch Page
   learnDutch: {
     hero: {
-      title: 'How Should You Learn Dutch?',
-      subtitle: 'A clear guide for Japanese learners',
+      title: '🇳🇱 Dutch Learning Guide 🌷',
+      subtitle: 'A step-by-step guide for those starting their Dutch learning journey,\nhelping you build skills at your own pace.',
     },
-    needDutch: {
-      title: 'Do You Need Dutch in the Netherlands?',
-      paragraphs: [
-        'The short answer: no, you can survive without Dutch. The Netherlands is a very English-friendly country, and you can get through many situations with English alone.',
-        'But knowing Dutch changes a lot of things.',
-      ],
-      benefits: [
-        'Chat casually with your neighbors',
-        "Communicate smoothly with your children's teachers",
-        'Feel confident at the doctor or municipality',
-        'Build closer relationships with Dutch colleagues',
-        'Feel like a member of this society, not just a foreigner',
-      ],
-      conclusion: "You don't need to aim for perfection. Even a little Dutch makes a big difference.",
-    },
-    learningPath: {
-      title: 'Recommended Learning Path',
-      subtitle: 'Progress step by step toward your goals',
-      stages: [
-        {
-          level: 'A1 - Beginner',
-          title: 'First Steps',
-          goal: 'Basic greetings and simple phrases',
-          focus: [
-            'Greetings (Hallo, Dag, Dank je wel)',
-            'Numbers (1-100)',
-            'Self-introduction',
-            'Simple questions and answers',
+    stages: [
+      {
+        level: '❶ Beginner',
+        title: 'Your First Steps in Dutch',
+        description: 'Start by building a solid foundation of Dutch vocabulary and grammar.\n\nLearn basic words and sentence structures while developing your ability to read and understand.',
+        materials: {
+          title: 'Reference Materials',
+          items: [
+            '"Basics of Dutch" (comprehensive beginner textbook)',
+            '"Essential Dutch Vocabulary 2000"',
+            '"Dutch Fundamentals: From Beginner to Upper-Intermediate"',
           ],
-          studyStyle: '10-15 minutes daily, lots of repetition. Focus on listening and imitating.',
-          mindset: "It doesn't have to be perfect. Start by getting used to the sounds.",
+          note: 'Using these materials as a base, you\'ll learn essential grammar and must-know vocabulary.',
         },
-        {
-          level: 'A2 - Elementary',
-          title: 'Basic Conversations',
-          goal: 'Handle simple daily conversations',
-          focus: [
-            'Shopping conversations',
-            'Asking and giving directions',
-            'Making reservations',
-            'Expressing simple preferences and opinions',
+        learningPoints: {
+          title: 'Learning Points',
+          items: [
+            'Understand basic word order',
+            'Get comfortable with verb conjugation',
+            'Learn everyday vocabulary',
+            'Master Dutch pronunciation rules',
           ],
-          studyStyle: 'Practice while imagining real situations. Use shadowing for pronunciation.',
-          mindset: 'Learning with context in mind helps things stick.',
         },
-        {
-          level: 'B1+ - Intermediate',
-          title: 'Practical Fluency',
-          goal: 'Handle more complex conversations and discussions',
-          focus: [
-            'Explaining symptoms to a doctor',
-            'School and work communication',
-            'Understanding news',
-            'Expressing opinions and emotions',
+      },
+      {
+        level: '❷ Foundation',
+        title: 'Solidify What You\'ve Learned',
+        description: 'Put the grammar and vocabulary from the beginner stage into practice.\n\nTo truly acquire Dutch, it\'s important to balance input with output.',
+        materials: {
+          title: 'Study Methods',
+          items: [
+            'Daily Dutch sentence-building exercises',
+            'Keep a simple diary in Dutch',
+            'Listen to various Dutch content to get used to the sounds',
+            'Check the news in Dutch',
+            'Practice speaking with AI (PingoAI)',
           ],
-          studyStyle: "Add Dutch reading and podcasts. Find more opportunities to speak.",
-          mindset: "At this stage, you're learning through using the language.",
+          note: '',
         },
-      ],
-    },
-    difficulties: {
-      title: 'Challenges for Japanese Learners',
-      subtitle: 'Common struggles and tips to overcome them',
-      items: [
-        {
-          title: 'Pronunciation',
-          description: "Sounds like G (guttural) and R don't exist in Japanese. It feels difficult at first, but you will improve with practice.",
-          tip: 'Listening and imitating native speakers is the most effective approach.',
+        learningPoints: {
+          title: 'Recommended Resources',
+          items: [
+            'Easy Dutch',
+            'NOS in makkelijke taal',
+            'NOS Jeugdjournaal',
+            'Dutch Today',
+            'Dutch Online Academy',
+            'The Dutch Podcast',
+            'PingoAI',
+            'LingQ',
+          ],
         },
-        {
-          title: 'Grammar Structure',
-          description: "Word order differs from both Japanese and English. Getting used to verb placement takes some time.",
-          tip: 'Start with short sentences and learn the patterns by feel.',
+      },
+      {
+        level: '❸ Practical',
+        title: 'Learn by Using',
+        description: 'Build on everything you\'ve learned by gaining real-world experience.\n\nThrough repeated practice, you\'ll gradually move from "understanding" to "actually using" Dutch.',
+        materials: {
+          title: 'Study Methods',
+          items: [
+            'Practice with NT2 Programma II and Inburgeren past exams',
+            'Join free language classes at the library or local language exchange events to create opportunities to use Dutch',
+          ],
+          note: '',
         },
-        {
-          title: 'Listening',
-          description: "Dutch people speak fast! It's totally normal not to understand at first.",
-          tip: 'Start with slower materials and gradually get used to normal speed.',
+        learningPoints: {
+          title: 'Learning Points',
+          items: [
+            'Don\'t be afraid of making mistakes — just try speaking',
+            'Build confidence by gradually increasing real-world practice',
+          ],
         },
-        {
-          title: 'Speaking Confidence',
-          description: '"What if I make a mistake?" - this feeling often holds people back.',
-          tip: "Dutch people appreciate when foreigners try to speak Dutch. Don't worry about mistakes — just keep trying!",
-        },
-      ],
-    },
-    tips: {
-      title: 'Effective Study Tips',
-      items: [
-        {
-          title: 'A Little Every Day',
-          description: '15 minutes daily is more effective than 2 hours once a week. Consistency is key.',
-        },
-        {
-          title: 'Shadowing',
-          description: 'Listen and immediately repeat. This trains both pronunciation and listening at once.',
-        },
-        {
-          title: 'Use It in Life',
-          description: 'Practice with real situations: greetings at the supermarket, simple orders. Start small.',
-        },
-        {
-          title: 'Learn in Context',
-          description: "Learn phrases and contexts, not just vocabulary. It's easier to recall in real conversations.",
-        },
-      ],
-    },
-    examples: {
-      title: 'Dutch You Can Use Today',
-      subtitle: 'Basic phrases to get you started',
-      phrases: [
-        {
-          dutch: 'Hallo / Dag',
-          japanese: 'Hello / Goodbye',
-          context: 'Basic greetings',
-        },
-        {
-          dutch: 'Dank je wel / Dank u wel',
-          japanese: 'Thank you',
-          context: 'Casual / Formal',
-        },
-        {
-          dutch: 'Mag ik dit, alstublieft?',
-          japanese: 'Can I have this, please?',
-          context: 'Ordering at a shop',
-        },
-        {
-          dutch: 'Ik kom uit Japan',
-          japanese: 'I come from Japan',
-          context: 'Self-introduction',
-        },
-        {
-          dutch: 'Spreekt u Engels?',
-          japanese: 'Do you speak English?',
-          context: "When you're stuck",
-        },
-        {
-          dutch: 'Ik leer Nederlands',
-          japanese: "I'm learning Dutch",
-          context: 'Conversation starter',
-        },
-      ],
-    },
+      },
+    ],
+    closingMessage: 'Dutch is acquired by building a solid foundation and gradually gaining experience using it.\n\nThe key is to keep going — enjoyably, without forcing yourself.\n\nAt Hana Language School, we support your learning journey\nwith kindness and care, at your own pace.',
     cta: {
       title: 'Ready to Learn Properly?',
-      description: 'Learn with Miz teaches Dutch in an easy-to-understand way for Japanese learners. Let\'s make your life in the Netherlands richer together.',
-      button1: 'About Lessons',
-      button2: 'Contact',
+      description: 'Hana Language School teaches Dutch in a way that\'s easy for Japanese learners to understand. Let\'s make your life in the Netherlands richer together.',
+      button1: 'View Course Details',
+      button2: 'Book a Free Trial Lesson',
     },
   },
 
   // Lessons Page
   lessons: {
     hero: {
-      title: 'Lessons',
-      subtitle: 'Dutch lessons designed for Japanese learners',
+      title: '3-Month Dutch Basics Course 🌿',
+      subtitle: 'Friendly Dutch lessons designed for Japanese learners',
     },
-    concept: {
-      title: 'Lesson Concept',
-      description: 'Learn with Miz lessons are designed for Japanese people living in the Netherlands. With clear explanations in Japanese and practical content you can use right away, you\'ll steadily improve your Dutch.',
-      features: [
-        'Grammar explained clearly in Japanese',
-        'Focus on areas where Japanese learners struggle',
-        'Phrases and expressions for real-life use',
-        'Flexible lessons that match your pace',
-      ],
-    },
-    types: {
-      title: 'Lesson Types',
-      subtitle: 'Choose what fits your learning style',
+    courseContent: {
+      title: '📚 Course Content',
       items: [
-        {
-          title: 'Beginner Lessons',
-          description: 'For complete beginners. Starting with basic pronunciation, greetings, and numbers.',
-          level: 'A1',
-          status: 'Available',
-        },
-        {
-          title: 'Daily Conversation Lessons',
-          description: 'Learn Dutch for shopping, restaurants, and neighborhood interactions.',
-          level: 'A1-A2',
-          status: 'Available',
-        },
-        {
-          title: 'Pronunciation Focus',
-          description: 'Intensive practice on sounds difficult for Japanese speakers. Build speaking confidence.',
-          level: 'All Levels',
-          status: 'Coming Soon',
-        },
-        {
-          title: 'Practical Life Dutch',
-          description: 'Practice conversations for specific situations: doctor, municipality, school, work.',
-          level: 'A2-B1',
-          status: 'Coming Soon',
-        },
-        {
-          title: 'Private Lessons',
-          description: 'One-on-one lessons fully customized to your goals and pace.',
-          level: 'All Levels',
-          status: 'Available',
-        },
-        {
-          title: 'Small Group Lessons',
-          description: 'Learn with others at your level. An affordable group option.',
-          level: 'All Levels',
-          status: 'Coming Soon',
-        },
+        'Grammar (15 essential topics)',
+        'Vocabulary (2,000 must-know words)',
+        'Listening practice',
+        'Writing correction',
+        'Weekly assignments',
+        'Q&A support via WhatsApp',
       ],
     },
-    future: {
-      title: 'Future Offerings',
-      description: "We're developing more ways to help you learn Dutch:",
+    additionalSupport: {
+      title: '💼 Extra Support',
+      subtitle: 'Career advice in the Netherlands also available',
       items: [
-        'Online video courses (self-paced recorded lessons)',
-        'Structured learning programs (level-based curriculum)',
-        'Downloadable study materials',
-        'Community features (connect with other learners)',
+        'LinkedIn profile optimization',
+        'English CV review',
+        'Job search advice',
       ],
-      note: "We'll notify you when these become available. Join the waitlist to stay updated.",
+    },
+    outcomes: {
+      title: '🎯 After Completing the Course',
+      items: [
+        'Solid understanding of Dutch grammar basics and essential vocabulary',
+        'Ability to start basic daily conversations',
+        'Smooth transition to Inburgeren / NT2 preparation',
+      ],
+    },
+    courseDetails: {
+      title: '💳 Course Details',
+      items: [
+        'Once a week (60 minutes)',
+        '12 lessons total',
+        '€60 × 3 months (total €180)',
+      ],
+      note: 'Build your skills steadily at a comfortable pace.',
+    },
+    payment: {
+      title: '💳 Payment Information',
+      items: [
+        '€60/month × 3 months',
+        'Auto-charged monthly from your enrollment date (e.g., Apr 10 → May 10 → Jun 10)',
+        'Payments automatically stop after 3 months',
+      ],
+      note: '※ Unused lessons can be taken within 6 months of your start date',
+    },
+    lessonPolicy: {
+      title: '📘 Lesson Policy',
+      items: [
+        '12 lessons in total',
+        'Pace can be adjusted to your schedule',
+        'Must be completed within 6 months of start date',
+      ],
+      reschedule: {
+        title: '🔁 Rescheduling',
+        description: 'Please notify at least 24 hours in advance',
+      },
+      cancellation: {
+        title: '⚠️ Cancellation',
+        description: 'Cancellations within 24 hours count as one lesson used',
+      },
+      sameDay: {
+        title: '💡 Same-day Changes',
+        items: [
+          'One same-day change is allowed',
+          'Additional same-day changes count as one lesson used',
+        ],
+      },
     },
     cta: {
-      title: 'Questions About Lessons?',
-      description: "Let's find the right lesson plan for you. Feel free to reach out.",
-      button1: 'Contact',
-      button2: 'Join Waitlist',
+      title: 'Questions About the Course?',
+      description: "Let's find the right learning plan for you. Start with a free trial lesson to experience the atmosphere firsthand.",
+      button1: 'Book a Free Trial Lesson',
+      button2: 'View Pricing Plans',
     },
   },
 
   // FAQ Page
   faq: {
     hero: {
-      title: 'Frequently Asked Questions',
-      subtitle: 'Answers to common questions about learning Dutch and lessons',
+      title: 'Frequently Asked Questions 🌿',
+      subtitle: 'Answers to common questions about Hana Language School',
     },
     items: [
       {
-        question: 'Can I live in the Netherlands with just English?',
-        answer: "Yes, especially in big cities like Amsterdam, you can manage with English alone. Many Dutch people speak excellent English. However, knowing Dutch makes daily life smoother and helps you integrate into local communities and build deeper relationships.",
+        question: 'Is this course suitable for beginners?',
+        answer: 'Yes, absolutely.\nThis course is designed for those who are starting Dutch from zero.\n\nAll lessons are one-on-one (personal lessons), so they are tailored to your level and learning pace.\n\nYou will learn step by step in Japanese, so you can feel comfortable and supported throughout the course.',
       },
       {
-        question: 'Should I learn Dutch?',
-        answer: "While not essential for survival, the benefits are many: daily conversations, official procedures, career relationships, and a sense of belonging. You don't need to aim for perfection — even a little Dutch opens up a lot.",
+        question: 'What is the lesson format?',
+        answer: 'All lessons are one-on-one personal lessons.\n\nThis means the lessons are fully customized based on your:\n・Level\n・Learning pace\n・Goals (daily life, job, exams, etc.)\n\nYou can ask questions anytime during the lesson, so you can learn in a clear and supportive environment.',
       },
       {
-        question: 'Is Dutch difficult for Japanese speakers?',
-        answer: "There are differences in pronunciation and grammar, but it's definitely learnable. The guttural G, R sounds, and word order might feel strange at first, but with practice, you will improve. At Learn with Miz, we focus on areas where Japanese learners commonly struggle.",
+        question: 'Can I take the lessons in Japanese?',
+        answer: 'Yes, lessons are conducted in Japanese.\n\nGrammar and word order — especially the parts that Japanese learners often find difficult — are explained clearly in Japanese.',
       },
       {
-        question: 'Is it okay if I\'m a complete beginner?',
-        answer: "Absolutely! Learn with Miz welcomes complete beginners. We start from the very basics — greetings, numbers, and simple phrases.",
+        question: 'What will I learn in this course?',
+        answer: 'You will learn the fundamentals of Dutch, focusing on essential grammar and core vocabulary.\n\nThe course also includes listening and writing practice, so you can develop all four language skills in a balanced way.',
       },
       {
-        question: 'Are lessons conducted in Japanese?',
-        answer: "Yes, lessons are conducted in Japanese. All grammar explanations, answers to questions, and detailed nuances are explained in Japanese, so you can learn with confidence.",
+        question: 'Can I keep up even if I\'m busy?',
+        answer: 'Yes, don\'t worry.\nYou can take your lessons within 6 months of your start date, so you can proceed at your own pace.',
       },
       {
-        question: 'Will there be online courses in the future?',
-        answer: "Yes, we're working on it. We're currently developing self-paced recorded courses and structured curricula. If you join the waitlist, you'll be among the first to know when they launch.",
+        question: 'What happens if I miss a lesson?',
+        answer: 'If you notify us at least 24 hours in advance, we can reschedule.\n\nChanges made within 24 hours will count as one lesson used.',
       },
       {
-        question: 'Can I learn while raising children or working?',
-        answer: "Of course. Lesson times and frequency are flexible. We'll design a learning plan that fits your lifestyle. Even a little bit of studying each day leads to steady progress.",
+        question: 'How do I pay?',
+        answer: 'You pay €60 per month.\nPayments are automatically charged monthly from your enrollment date.\n\n(Example: Apr 10 → May 10 → Jun 10)',
       },
       {
-        question: 'How do I take lessons?',
-        answer: "Currently, we primarily offer online private lessons via video call, so you can join from anywhere. Please use the contact form to reach out. We'll listen to your preferences, level, and goals, then suggest the best plan.",
+        question: 'Can I stop in the middle?',
+        answer: 'Yes, you can choose to continue on a month-by-month basis.\n\nThe fee is €60/month, so you can decide at your own pace whether to continue.\n\nHowever, this course is designed as a 3-month program to build a solid Dutch foundation.\nFor those who want to make real progress, we recommend completing all 3 months.\n\nLessons can be taken within 6 months of your start date, so you can proceed at a comfortable pace.',
+      },
+      {
+        question: 'What happens in the free trial lesson?',
+        answer: 'We\'ll check your current level and goals while giving you a feel for an actual lesson.\n\nSince all lessons are personal, we\'ll suggest a learning plan tailored to your goals and lifestyle.',
+      },
+      {
+        question: 'Do I need to purchase any textbooks?',
+        answer: 'No, you don\'t need to purchase any materials.\n\nLessons use original slides based on the following references:\n・"Basics of Dutch" (comprehensive beginner textbook)\n・"Dutch Fundamentals: From Beginner to Upper-Intermediate"\n・"Essential Dutch Vocabulary 2000"\n・NT2 Programma I past exams\n\nWe use clearly organized slides covering essential grammar and vocabulary, following a personalized learning plan to help you build your Dutch foundation efficiently.',
+      },
+      {
+        question: 'Will I be pressured to sign up?',
+        answer: 'After the trial lesson, you can take your time to consider.\nWe never pressure anyone to enroll — you can feel completely at ease.',
       },
     ],
     cta: {
@@ -516,7 +461,7 @@ export const en: Dictionary = {
     intro: {
       title: 'Contact / Waitlist Registration',
       description: 'For questions about lessons, learning consultations, or to receive updates about future courses, please use the form below.',
-      fromMiz: "I respond to every message with care. Please feel free to ask about anything, no matter how small — whether it's about life in the Netherlands or learning Dutch. — Miz",
+      fromMiz: "I respond to every message with care. Please feel free to ask about anything, no matter how small — whether it's about life in the Netherlands or learning Dutch. — Miz (Hana Language School)",
     },
     form: {
       name: 'Name',
@@ -618,36 +563,36 @@ export const en: Dictionary = {
   // SEO
   seo: {
     home: {
-      title: 'Learn with Miz | Dutch Lessons for Japanese Learners',
-      description: 'Dutch lessons for Japanese people in the Netherlands. Learn practical Dutch with clear Japanese explanations.',
+      title: 'Hana Language School | Dutch Lessons for Japanese Learners',
+      description: 'Master Dutch basics in 3 months. Online lessons clearly explained in Japanese for efficient learning.',
     },
     about: {
-      title: 'About Miz | Learn with Miz',
-      description: 'Meet Mizuki, Dutch language instructor. A unique approach to teaching Dutch for Japanese learners.',
+      title: 'Instructor | Hana Language School',
+      description: 'Meet Mizuki, Dutch language instructor. 7+ years in the Netherlands, teaching Dutch to Japanese learners.',
     },
     learnDutch: {
-      title: 'Dutch Learning Guide | Learn with Miz',
-      description: 'A guide to learning Dutch for Japanese speakers. Learning steps, common challenges, and effective study methods.',
+      title: 'Dutch Learning Guide | Hana Language School',
+      description: 'A guide to learning Dutch for daily life in the Netherlands. Includes Inburgeren and NT2 information.',
     },
     lessons: {
-      title: 'Lessons | Learn with Miz',
-      description: 'Dutch lessons for Japanese learners. Private lessons, group lessons, and online courses.',
+      title: 'Course | Hana Language School',
+      description: '3-month Dutch basics course. 12 one-on-one lessons covering grammar, vocabulary, listening, and writing.',
     },
     faq: {
-      title: 'FAQ | Learn with Miz',
-      description: 'Frequently asked questions about learning Dutch and lessons. Helping beginners feel confident.',
+      title: 'FAQ | Hana Language School',
+      description: 'Frequently asked questions about Hana Language School lessons. Helping beginners feel confident.',
     },
     contact: {
-      title: 'Contact | Learn with Miz',
-      description: 'Inquiries about Dutch lessons, waitlist registration. Feel free to reach out.',
+      title: 'Contact | Hana Language School',
+      description: 'Inquiries about Dutch lessons. Book a free trial lesson.',
     },
     blog: {
-      title: 'Blog | Learn with Miz',
+      title: 'Blog | Hana Language School',
       description: 'Dutch learning tips and stories from life in the Netherlands. Blog articles by Miz.',
     },
     pricing: {
-      title: 'Pricing | Learn with Miz',
-      description: 'Personal Dutch course (12 lessons) pricing plans. Choose between one-time payment or monthly installments.',
+      title: 'Pricing | Hana Language School',
+      description: '3-month Dutch basics course (12 lessons) pricing. €60/month × 3 months or one-time €180.',
     },
   },
 
@@ -655,13 +600,14 @@ export const en: Dictionary = {
   pricing: {
     title: 'Pricing Plans',
     subtitle: 'Choose the plan that works for you',
-    description: 'Personal Dutch course with Mizuki (12 lessons). Learn practical Dutch for daily life in the Netherlands, taught in Japanese.',
+    description: '3-month Dutch basics course (12 lessons). Learn essential Dutch for life in the Netherlands, taught entirely in Japanese.',
     courseHighlights: [
-      '12 one-on-one lessons with Mizuki',
-      'Taught in Japanese',
-      'Curriculum tailored to life in the Netherlands',
+      '12 one-on-one lessons (60 min each, once a week)',
+      'Taught entirely in Japanese',
+      'Original materials by Miz',
       'Flexible scheduling',
       'Valid for 6 months from start date',
+      'Q&A support via WhatsApp',
     ],
     fullPayment: {
       title: 'One-time Payment',

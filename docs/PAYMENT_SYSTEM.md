@@ -401,6 +401,43 @@ DATABASE_URL="your-neon-connection-string" npx prisma migrate deploy
 
 ---
 
+## Validation Checklist (TODO)
+
+After deployment, run through these steps to verify the payment system works end-to-end:
+
+### Pre-checks
+- [ ] Vercel deployment shows green checkmark (Ready)
+- [ ] `https://learnwithmiz.nl/pricing` loads with two pricing cards (€180 one-time, €60/month)
+
+### Payment Flow Test
+- [ ] Click the €60/month button → redirected to Stripe Checkout
+- [ ] Complete payment with test card `4242 4242 4242 4242` (expiry: `12/29`, CVC: `123`)
+- [ ] Redirected to `/checkout/success` after payment
+
+### Webhook Verification
+- [ ] Check Stripe Dashboard → Developers → Webhooks → your endpoint
+- [ ] `checkout.session.completed` event shows green checkmark (200 response)
+- [ ] If error: click the event to see response body / error message
+
+### Admin Dashboard
+- [ ] Visit `https://learnwithmiz.nl/admin?secret=YOUR_ADMIN_SECRET`
+- [ ] Test student appears with enrollment and payment details
+
+### Billing Page
+- [ ] Visit `https://learnwithmiz.nl/billing`
+- [ ] Enter the test email used during checkout
+- [ ] Student data, enrollment status, and payment history display correctly
+- [ ] "Manage Payment Methods" button opens Stripe Customer Portal
+
+### Debug: If webhook fails
+1. Check Stripe Dashboard → Webhooks → endpoint → event attempts for error codes
+2. Check Vercel → project → Function Logs for server-side errors
+3. Verify `STRIPE_WEBHOOK_SECRET` in Vercel env vars matches the endpoint signing secret
+4. Verify `DATABASE_URL` in Vercel env vars points to Neon (not localhost)
+5. Try re-sending the event from Stripe Dashboard (click "Resend" on the failed event)
+
+---
+
 ## Future Extensibility
 
 ### Authentication

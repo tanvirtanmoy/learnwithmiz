@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Link href="/" className="inline-block">
               <span className="text-xl font-semibold text-warmGray-800">
-                Learn with <span className="text-cafe-600">Miz</span>
+                🌸 <span className="text-cafe-600">Hana</span> Language School
               </span>
             </Link>
             <p className="text-sm text-warmGray-500 leading-relaxed">

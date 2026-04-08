@@ -52,7 +52,7 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
               openIndex === index ? 'max-h-96' : 'max-h-0'
             }`}
           >
-            <p className="px-6 pb-5 text-warmGray-600 leading-relaxed">{item.answer}</p>
+            <p className="px-6 pb-5 text-warmGray-600 leading-relaxed whitespace-pre-line">{item.answer}</p>
           </div>
         </div>
       ))}

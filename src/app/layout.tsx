@@ -17,13 +17,13 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Learn with Miz | 日本人のためのオランダ語レッスン",
-  description: "オランダ在住の日本人向けオランダ語レッスン。日本語でわかりやすく、日常生活に役立つオランダ語をやさしく学べます。Dutch lessons for Japanese people in the Netherlands.",
-  keywords: ["Dutch lessons", "Japanese", "Netherlands", "オランダ語", "日本人", "レッスン"],
+  title: "Hana Language School | 日本人のためのオランダ語レッスン",
+  description: "3ヶ月でオランダ語の基礎を身につける。日本語でわかりやすく、効率よく学べるオンラインレッスン。Dutch lessons for Japanese learners.",
+  keywords: ["Dutch lessons", "Japanese", "Netherlands", "オランダ語", "日本人", "レッスン", "Hana Language School"],
   authors: [{ name: "Mizuki" }],
   openGraph: {
-    title: "Learn with Miz | 日本人のためのオランダ語レッスン",
-    description: "オランダ在住の日本人向けオランダ語レッスン。日本語でわかりやすく学べます。",
+    title: "Hana Language School | 日本人のためのオランダ語レッスン",
+    description: "3ヶ月でオランダ語の基礎を身につける。日本語でわかりやすく学べます。",
     type: "website",
     locale: "ja_JP",
     alternateLocale: "en_US",

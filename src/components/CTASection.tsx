@@ -32,7 +32,7 @@ export default function CTASection({
           {title}
         </h2>
         {description && (
-          <p className="text-lg text-warmGray-600 mb-8 leading-relaxed">
+          <p className="text-lg text-warmGray-600 mb-8 leading-relaxed whitespace-pre-line">
             {description}
           </p>
         )}

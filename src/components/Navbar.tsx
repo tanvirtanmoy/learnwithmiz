@@ -27,7 +27,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <span className="text-xl font-semibold text-warmGray-800">
-              Learn with <span className="text-cafe-600">Miz</span>
+              🌸 <span className="text-cafe-600">Hana</span> Language School
             </span>
           </Link>
 
@@ -37,7 +37,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3 py-2 text-sm font-medium text-warmGray-600 hover:text-warmGray-900 rounded-lg hover:bg-cafe-50 transition-colors"
+                className="px-2 py-2 text-xs font-medium text-warmGray-600 hover:text-warmGray-900 rounded-lg hover:bg-cafe-50 transition-colors whitespace-nowrap"
               >
                 {link.label}
               </Link>

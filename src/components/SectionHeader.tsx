@@ -15,7 +15,7 @@ export default function SectionHeader({
         {title}
       </h2>
       {subtitle && (
-        <p className="text-warmGray-600 text-lg max-w-2xl mx-auto">
+        <p className="text-warmGray-600 text-lg max-w-2xl mx-auto whitespace-pre-line">
           {subtitle}
         </p>
       )}

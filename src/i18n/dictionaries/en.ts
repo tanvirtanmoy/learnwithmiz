@@ -45,7 +45,7 @@ export const en: Dictionary = {
   // Home Page
   home: {
     hero: {
-      title: '� Master Dutch Basics in 3 Months',
+      title: 'Master Dutch Basics in 3 Months',
       subtitle: '🌸 Hana Language School 🌸',
       description: 'Friendly online Dutch lessons for Japanese learners\n\nLearn the basics of Dutch in 3 months,\nclearly explained in Japanese for efficient learning.',
       cta1: 'Free Trial Lesson',
@@ -60,10 +60,10 @@ export const en: Dictionary = {
         'I want to learn, but I\'m too busy with work and childcare…',
         'I want to understand what\'s being said at the municipality or doctor\'s office…',
       ],
-      cta: 'This course is designed for people just like you 🌷',
+      cta: 'This course is designed for people just like you',
     },
     courseIntro: {
-      title: '🌷 Learn Dutch gently, in Japanese',
+      title: 'Learn Dutch gently, in Japanese',
       paragraphs: [
         'Hana Language School is a 3-month Dutch basics course designed for Japanese learners.',
         'Our one-on-one online lessons, taught in Japanese, help you build essential grammar, vocabulary, and conversation skills — at your own pace.',
@@ -143,7 +143,7 @@ export const en: Dictionary = {
         'Course introduction',
         'Start your lessons',
       ],
-      message: 'Make your life in the Netherlands more comfortable and enjoyable 🌷\nStart learning Dutch gently, at your own pace.',
+      message: 'Make your life in the Netherlands more comfortable and enjoyable.\nStart learning Dutch gently, at your own pace.',
       cta: 'Book a Free Trial Lesson',
     },
     newsletter: {
@@ -224,7 +224,7 @@ export const en: Dictionary = {
   // Learn Dutch Page
   learnDutch: {
     hero: {
-      title: '� Dutch Learning Guide',
+      title: 'Dutch Learning Guide',
       subtitle: 'A step-by-step guide for those starting their Dutch learning journey,\nhelping you build skills at your own pace.',
     },
     stages: [

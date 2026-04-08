@@ -22,17 +22,17 @@ export default function CTASection({
   variant = 'default',
 }: CTASectionProps) {
   const bgClasses = variant === 'highlight' 
-    ? 'bg-gradient-to-r from-cafe-50 to-cream' 
-    : 'bg-cream';
+    ? 'bg-gradient-to-r from-bg-section to-bg-warm' 
+    : 'bg-bg-warm';
 
   return (
     <section className={`py-16 md:py-20 ${bgClasses}`}>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-warmGray-800 mb-4">
+        <h2 className="text-2xl md:text-3xl font-semibold text-brown-primary mb-4">
           {title}
         </h2>
         {description && (
-          <p className="text-lg text-warmGray-600 mb-8 leading-relaxed whitespace-pre-line">
+          <p className="text-lg text-brown-secondary mb-8 leading-relaxed whitespace-pre-line">
             {description}
           </p>
         )}

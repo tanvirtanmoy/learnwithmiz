@@ -33,18 +33,18 @@ export default function NewsletterSignup() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-cafe-50/90 to-cream/90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-bg-section/90 to-bg-warm/90" />
       </div>
       <div className="relative max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-warmGray-800 mb-3">
+        <h2 className="text-2xl md:text-3xl font-semibold text-brown-primary mb-3">
           {d.home.newsletter.title}
         </h2>
-        <p className="text-warmGray-600 mb-8">
+        <p className="text-brown-secondary mb-8">
           {d.home.newsletter.subtitle}
         </p>
 
         {isSuccess ? (
-          <div className="bg-cafe-100 text-cafe-700 px-6 py-4 rounded-lg inline-flex items-center gap-2">
+          <div className="bg-brown-accent/40 text-brown-primary px-6 py-4 rounded-full inline-flex items-center gap-2">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
@@ -58,7 +58,7 @@ export default function NewsletterSignup() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder={d.home.newsletter.placeholder}
-              className="flex-grow px-4 py-3 rounded-lg border border-cafe-200 focus:border-cafe-500 focus:ring-2 focus:ring-cafe-100 transition-colors outline-none text-warmGray-800 placeholder-warmGray-400"
+              className="flex-grow px-4 py-3 rounded-full border border-border-soft focus:border-brown-button focus:ring-2 focus:ring-brown-accent/40 transition-all duration-300 outline-none text-brown-primary placeholder-brown-secondary/50"
             />
             <Button
               type="submit"
@@ -71,7 +71,7 @@ export default function NewsletterSignup() {
           </form>
         )}
 
-        <p className="mt-4 text-sm text-warmGray-500">
+        <p className="mt-4 text-sm text-brown-secondary/70">
           {d.home.newsletter.privacy}
         </p>
       </div>

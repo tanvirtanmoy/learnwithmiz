@@ -23,7 +23,7 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-warmGray-600 hover:text-warmGray-900 rounded-lg hover:bg-cafe-50 transition-colors"
+        className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-heading font-medium text-brown-secondary hover:text-brown-primary rounded-full hover:bg-brown-accent/30 transition-all duration-300"
         aria-label="Switch language"
       >
         <svg
@@ -56,7 +56,7 @@ export default function LanguageSwitcher() {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 py-1 w-32 bg-white rounded-lg shadow-lg border border-cafe-100 z-50">
+        <div className="absolute right-0 mt-2 py-1 w-32 bg-bg-white rounded-2xl shadow-lg border border-border-light z-50">
           {locales.map((loc) => (
             <button
               key={loc}
@@ -64,10 +64,10 @@ export default function LanguageSwitcher() {
                 setLocale(loc as Locale);
                 setIsOpen(false);
               }}
-              className={`w-full px-4 py-2 text-left text-sm transition-colors ${
+              className={`w-full px-4 py-2 text-left text-sm transition-all duration-300 ${
                 locale === loc
-                  ? 'text-cafe-700 bg-cafe-50 font-medium'
-                  : 'text-warmGray-600 hover:bg-cafe-50'
+                  ? 'text-brown-primary bg-brown-accent/30 font-medium'
+                  : 'text-brown-secondary hover:bg-brown-accent/20'
               }`}
             >
               {localeNames[loc as Locale]}

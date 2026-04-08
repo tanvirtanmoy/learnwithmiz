@@ -23,16 +23,16 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
       {items.map((item, index) => (
         <div
           key={index}
-          className="bg-white rounded-xl border border-cafe-100 overflow-hidden transition-shadow hover:shadow-sm"
+          className="bg-bg-white rounded-2xl border border-border-light overflow-hidden transition-shadow duration-300 hover:shadow-sm"
         >
           <button
             onClick={() => toggle(index)}
-            className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cafe-500"
+            className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brown-accent"
             aria-expanded={openIndex === index}
           >
-            <span className="text-warmGray-800 font-medium pr-4">{item.question}</span>
+            <span className="text-brown-primary font-heading font-medium pr-4">{item.question}</span>
             <svg
-              className={`w-5 h-5 text-warmGray-400 flex-shrink-0 transition-transform duration-200 ${
+              className={`w-5 h-5 text-brown-secondary flex-shrink-0 transition-transform duration-300 ${
                 openIndex === index ? 'rotate-180' : ''
               }`}
               fill="none"
@@ -52,7 +52,7 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
               openIndex === index ? 'max-h-96' : 'max-h-0'
             }`}
           >
-            <p className="px-6 pb-5 text-warmGray-600 leading-relaxed whitespace-pre-line">{item.answer}</p>
+            <p className="px-6 pb-5 text-brown-secondary leading-relaxed whitespace-pre-line">{item.answer}</p>
           </div>
         </div>
       ))}

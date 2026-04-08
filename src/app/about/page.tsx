@@ -17,7 +17,7 @@ export default function AboutPage() {
       />
 
       {/* Introduction Section */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             {/* Photo */}
@@ -36,27 +36,27 @@ export default function AboutPage() {
 
             {/* Bio */}
             <div className="flex-grow">
-              <h2 className="text-2xl md:text-3xl font-bold text-warmGray-800 mb-6">
+              <h2 className="text-2xl md:text-3xl font-semibold text-brown-primary mb-6">
                 {d.about.intro.title}
               </h2>
               <div className="space-y-4">
                 {d.about.intro.paragraphs.map((paragraph, index) => (
-                  <p key={index} className="text-warmGray-600 leading-relaxed">
+                  <p key={index} className="text-brown-secondary leading-relaxed">
                     {paragraph}
                   </p>
                 ))}
               </div>
 
               {/* Background */}
-              <div className="mt-8 pt-6 border-t border-cafe-200">
-                <h3 className="text-lg font-semibold text-warmGray-800 mb-4 flex items-center gap-2">
-                  <span className="text-cafe-500">🌿</span>
+              <div className="mt-8 pt-6 border-t border-border-soft">
+                <h3 className="text-lg font-semibold text-brown-primary mb-4 flex items-center gap-2">
+                  <span className="text-brown-button">🌿</span>
                   {d.about.intro.background.title}
                 </h3>
                 <ul className="space-y-2">
                   {d.about.intro.background.items.map((item, index) => (
-                    <li key={index} className="flex items-start gap-2 text-warmGray-600 text-sm">
-                      <span className="text-cafe-500 mt-1">•</span>
+                    <li key={index} className="flex items-start gap-2 text-brown-secondary text-sm">
+                      <span className="text-brown-button mt-1">•</span>
                       {item}
                     </li>
                   ))}
@@ -77,7 +77,7 @@ export default function AboutPage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-cream/90" />
+          <div className="absolute inset-0 bg-bg-warm/90" />
         </div>
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
@@ -88,14 +88,14 @@ export default function AboutPage() {
             {d.about.philosophy.points.map((point, index) => (
               <Card key={index} hover>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 bg-cafe-100 rounded-full flex items-center justify-center text-cafe-600 font-semibold">
+                  <div className="flex-shrink-0 w-10 h-10 bg-brown-accent rounded-full flex items-center justify-center text-brown-primary font-heading font-semibold">
                     {index + 1}
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-warmGray-800 mb-2">
+                    <h3 className="text-lg font-semibold text-brown-primary mb-2">
                       {point.title}
                     </h3>
-                    <p className="text-warmGray-600 text-sm leading-relaxed">
+                    <p className="text-brown-secondary text-sm leading-relaxed">
                       {point.description}
                     </p>
                   </div>
@@ -107,15 +107,15 @@ export default function AboutPage() {
       </section>
 
       {/* For Whom Section */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader title={d.about.forWhom.title} />
-          <div className="bg-cafe-50 rounded-2xl p-8">
+          <div className="bg-bg-section rounded-2xl p-8">
             <ul className="space-y-4">
               {d.about.forWhom.items.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <svg
-                    className="w-5 h-5 text-cafe-600 flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-brown-button flex-shrink-0 mt-0.5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -127,7 +127,7 @@ export default function AboutPage() {
                       d="M5 13l4 4L19 7"
                     />
                   </svg>
-                  <span className="text-warmGray-700">{item}</span>
+                  <span className="text-brown-secondary">{item}</span>
                 </li>
               ))}
             </ul>

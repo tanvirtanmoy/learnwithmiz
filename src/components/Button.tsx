@@ -22,18 +22,18 @@ export default function Button({
   type = 'button',
   disabled = false,
 }: ButtonProps) {
-  const baseClasses = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
+  const baseClasses = 'inline-flex items-center justify-center font-heading font-medium rounded-full transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed tracking-wide';
   
   const variantClasses = {
-    primary: 'bg-cafe-600 text-white hover:bg-cafe-700 focus:ring-cafe-500 shadow-sm hover:shadow',
-    secondary: 'bg-cream text-warmGray-700 hover:bg-latte focus:ring-warmGray-400',
-    outline: 'border-2 border-cafe-600 text-cafe-700 hover:bg-cafe-50 focus:ring-cafe-500',
+    primary: 'bg-brown-button text-brown-primary hover:bg-brown-button-hover focus:ring-brown-accent shadow-sm hover:shadow-md',
+    secondary: 'bg-bg-section text-brown-secondary hover:bg-brown-light focus:ring-brown-accent',
+    outline: 'border-2 border-brown-button text-brown-primary hover:bg-brown-accent/30 focus:ring-brown-accent',
   };
 
   const sizeClasses = {
-    small: 'px-4 py-2 text-sm',
-    medium: 'px-6 py-2.5 text-base',
-    large: 'px-8 py-3 text-lg',
+    small: 'px-5 py-2 text-sm',
+    medium: 'px-7 py-2.5 text-base',
+    large: 'px-9 py-3.5 text-lg',
   };
 
   const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;

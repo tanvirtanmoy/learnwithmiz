@@ -1,19 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Noto_Sans_JP } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/i18n";
 import { Navbar, Footer } from "@/components";
 
-const inter = Inter({
-  variable: "--font-inter",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-});
-
-const notoSansJP = Noto_Sans_JP({
-  variable: "--font-noto-sans-jp",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -38,9 +33,15 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
-      className={`${inter.variable} ${notoSansJP.variable} h-full`}
+      className={`${poppins.variable} h-full`}
     >
-      <body className="min-h-full flex flex-col bg-warmWhite text-warmGray-800">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-full flex flex-col bg-bg-warm text-brown-primary">
         <LanguageProvider>
           <Navbar />
           <main className="flex-grow">{children}</main>

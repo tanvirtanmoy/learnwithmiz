@@ -21,13 +21,13 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-warmWhite/90 backdrop-blur-md border-b border-cafe-100">
+    <header className="sticky top-0 z-50 bg-bg-warm/90 backdrop-blur-md border-b border-border-light">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <span className="text-xl font-semibold text-warmGray-800">
-              🌸 <span className="text-cafe-600">Hana</span> Language School
+            <span className="font-heading text-xl font-semibold text-brown-primary tracking-wide">
+              🌸 <span className="text-brown-secondary">Hana</span> Language School
             </span>
           </Link>
 
@@ -37,7 +37,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-2 py-2 text-xs font-medium text-warmGray-600 hover:text-warmGray-900 rounded-lg hover:bg-cafe-50 transition-colors whitespace-nowrap"
+                className="px-2 py-2 text-xs font-heading font-medium text-brown-secondary hover:text-brown-primary rounded-full hover:bg-brown-accent/30 transition-all duration-300 whitespace-nowrap"
               >
                 {link.label}
               </Link>
@@ -51,7 +51,7 @@ export default function Navbar() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 text-warmGray-600 hover:text-warmGray-900 rounded-lg hover:bg-cafe-50 transition-colors"
+              className="md:hidden p-2 text-brown-secondary hover:text-brown-primary rounded-full hover:bg-brown-accent/30 transition-all duration-300"
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (
@@ -69,14 +69,14 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-cafe-100">
+          <div className="md:hidden py-4 border-t border-border-light">
             <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-4 py-3 text-sm font-medium text-warmGray-600 hover:text-warmGray-900 hover:bg-cafe-50 rounded-lg transition-colors"
+                  className="px-4 py-3 text-sm font-heading font-medium text-brown-secondary hover:text-brown-primary hover:bg-brown-accent/30 rounded-full transition-all duration-300"
                 >
                   {link.label}
                 </Link>

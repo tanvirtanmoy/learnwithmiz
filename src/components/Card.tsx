@@ -10,8 +10,8 @@ export default function Card({ children, className = '', hover = false }: CardPr
   return (
     <div
       className={`
-        bg-white rounded-xl border border-cafe-100 p-6
-        ${hover ? 'transition-all duration-200 hover:shadow-lg hover:border-cafe-200 hover:-translate-y-0.5' : 'shadow-sm'}
+        bg-bg-white rounded-2xl border border-border-light p-6
+        ${hover ? 'transition-all duration-300 hover:shadow-lg hover:border-border-soft hover:-translate-y-0.5' : 'shadow-sm'}
         ${className}
       `}
     >

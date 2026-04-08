@@ -45,7 +45,7 @@ export const en: Dictionary = {
   // Home Page
   home: {
     hero: {
-      title: '🇳🇱 Master Dutch Basics in 3 Months',
+      title: '� Master Dutch Basics in 3 Months',
       subtitle: '🌸 Hana Language School 🌸',
       description: 'Friendly online Dutch lessons for Japanese learners\n\nLearn the basics of Dutch in 3 months,\nclearly explained in Japanese for efficient learning.',
       cta1: 'Free Trial Lesson',
@@ -224,7 +224,7 @@ export const en: Dictionary = {
   // Learn Dutch Page
   learnDutch: {
     hero: {
-      title: '🇳🇱 Dutch Learning Guide 🌷',
+      title: '� Dutch Learning Guide',
       subtitle: 'A step-by-step guide for those starting their Dutch learning journey,\nhelping you build skills at your own pace.',
     },
     stages: [

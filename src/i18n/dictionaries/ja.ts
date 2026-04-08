@@ -43,7 +43,7 @@ export const ja = {
   // Home Page
   home: {
     hero: {
-      title: '🇳🇱 3ヶ月でオランダ語の基礎を身につける',
+      title: '� 3ヶ月でオランダ語の基礎を身につける',
       subtitle: '🌸 Hana Language School 🌸',
       description: '日本人のためのやさしいオランダ語オンラインレッスン\n\nオランダ語の基礎を3ヶ月で、\n日本語でわかりやすく、効率よく学べるコースです。',
       cta1: '無料体験レッスン',
@@ -218,7 +218,7 @@ export const ja = {
   // Learn Dutch Page
   learnDutch: {
     hero: {
-      title: '🇳🇱 オランダ語学習ガイド',
+      title: '� オランダ語学習ガイド',
       subtitle: 'これからオランダ語を学ぶ方に向けて、\n基礎から無理なく力をつけていくための学習ステップをご紹介します。',
     },
     stages: [
